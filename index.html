@@ -14,11 +14,13 @@
 <body>
   <!--------------------------- HEADER ----------------------------------------------->
   <header>
-    <h1><img src="img\logo\Booki.png" alt="Booki"></h1>
+    <div class="logo">
+      <img src="img\logo\Booki.png" alt="Booki">
+    </div>
     <nav>
       <ul>
-        <li><a href="index.html">Hébergement</a></li>
-        <li><a href="#">Activités</a></li>
+        <li><a href="#hosting">Hébergements</a></li>
+        <li><a href="#activities">Activités</a></li>
       </ul>
     </nav>
   </header>
@@ -28,10 +30,12 @@
     <section class="search">
 
       <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-      <p>En plein centre ville ou en pleine rue </br></p>
+      <p>En plein centre ville ou en pleine nature</p>
       
       <form class="search__form">
-        <i class="fa-solid fa-location-dot"></i>
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
         <input type="text" name="city" id="city" placeholder="Marseille, France">
         <label for="city"><a href="#">Rechercher</a></label>
       </form>
@@ -68,9 +72,9 @@
     </section>
 
     <!--------------------------- HOSTING ----------------------------------------------->
-    <section class="hosting">
+    <section class="hosting" id="hosting">
 
-      <h3>Hébergements à Marseille</h3>
+      <h2>Hébergements à Marseille</h2>
 
       <a class="hostingCard" href="#" >
         <div class="hostingCard__layout">
@@ -98,7 +102,7 @@
     <!--------------------------- POPULAR ----------------------------------------------->
     <aside class="popular">
 
-      <h3>Les plus populaires</h3>
+      <h2>Les plus populaires</h2>
       <i class="fa-solid fa-star" id="full"></i>
 
       <a class="popularCard" href="#">
@@ -124,9 +128,9 @@
     </aside>
 
     <!--------------------------- ACTIVITIES ----------------------------------------------->
-    <section class="activities">
+    <section class="activities" id="activities">
 
-      <h3>Activités à Marseille</h3>
+      <h2>Activités à Marseille</h2>
         
       <a class="activity" id="" href="#">
         <div class="activityBoxBig__Image">

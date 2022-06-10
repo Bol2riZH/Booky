@@ -1,0 +1,145 @@
+/* INIT */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url('/font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ralewayRegular';
+  src: url('/font/Raleway/static/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ralewayBold';
+  src: url('/font/Raleway/static/Raleway-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ralewayExtraBold';
+  src: url('/font/Raleway/static/Raleway-ExtraBold.ttf') format('truetype');
+}
+
+html {
+  font-family: 'raleway', sans-serif;
+
+  max-width: 1310px;
+  margin: auto;
+
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-family: 'ralewayBold';
+  font-size: 22px;
+}
+
+h3 {
+  font-family: 'ralewayBold';
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo > img {
+  width: 50%;
+  margin-left: 15px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  padding: 38px 25px 0px 25px;
+}
+
+nav a:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+}
+
+/* SECTION SEARCH */
+
+/* Form */
+.search p {
+  margin: 10px 0px;
+}
+
+.search__form {
+  display: flex;
+}
+
+.location {
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+
+  background-color: #f2f2f2;
+}
+
+.fa-location-dot {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+
+  font-size: 18px;
+}
+
+.search__form input {
+  width: 240px;
+  height: 50px;
+
+  border: 1px solid #f2f2f2;
+  outline-color: #cfcfcf;
+
+  padding-left: 15px;
+  font-family: 'ralewayExtraBold';
+  font-size: 18px;
+}
+
+::placeholder {
+  color: black;
+}
+
+label {
+  display: flex;
+  width: 130px;
+  height: 50px;
+
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+
+  background-color: #0065fc;
+}
+
+label a {
+  align-self: center;
+
+  padding: 0 15px;
+
+  font-family: 'ralewayBold';
+  font-size: 17px;
+  color: white;
+}
