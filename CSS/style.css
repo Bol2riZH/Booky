@@ -80,8 +80,8 @@ nav a:hover {
 /* SECTION SEARCH */
 
 /* Form */
-.search p {
-  margin: 10px 0px;
+.search > p {
+  margin: 15px 0px;
 }
 
 .search__form {
@@ -112,7 +112,7 @@ nav a:hover {
   height: 50px;
 
   border: 1px solid #f2f2f2;
-  outline-color: #cfcfcf;
+  outline-color: #b9b9b9;
 
   padding-left: 15px;
   font-family: 'ralewayExtraBold';
@@ -125,6 +125,9 @@ nav a:hover {
 
 label {
   display: flex;
+  align-items: center;
+  cursor: pointer;
+
   width: 130px;
   height: 50px;
 
@@ -132,14 +135,74 @@ label {
   border-top-right-radius: 15px;
 
   background-color: #0065fc;
-}
-
-label a {
-  align-self: center;
 
   padding: 0 15px;
-
   font-family: 'ralewayBold';
   font-size: 17px;
   color: white;
 }
+
+/* filter */
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+
+  margin: 30px 0;
+}
+
+.filter__button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  border: 1px solid #b9b9b9;
+  border-radius: 30px;
+
+  transition: border-color 350ms, box-shadow 350ms, transform 250ms;
+}
+
+.filter__button:hover {
+  border-color: #0065fc;
+  box-shadow: 0px 0px 8px #0065fc;
+  transform: scale(1.01);
+}
+
+.filter__layout {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  right: 2px;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  background-color: #deebff;
+  color: #0065fc;
+  font-size: 20px;
+}
+
+.filter__icone {
+  align-self: center;
+}
+
+.filter__icone:hover {
+  transform: rotate(360deg);
+}
+
+.filter__button p {
+  padding: 0 15px;
+
+  font-family: 'ralewayBold';
+  font-size: 18px;
+}
+
+.filter__button p::first-letter {
+  text-transform: capitalize;
+}
+
+/* Information */
