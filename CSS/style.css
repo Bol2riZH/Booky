@@ -27,7 +27,7 @@
 html {
   font-family: 'raleway', sans-serif;
 
-  max-width: 1310px;
+  max-width: 1340px;
   margin: auto;
 
   scroll-behavior: smooth;
@@ -116,7 +116,7 @@ nav a:hover {
   height: 50px;
 
   border: 1px solid #f2f2f2;
-  outline-color: #b9b9b9;
+  outline-color: #d9d9d9;
 
   padding-left: 15px;
   font-family: 'ralewayExtraBold';
@@ -161,7 +161,7 @@ label {
   align-items: center;
   cursor: pointer;
 
-  border: 1px solid #b9b9b9;
+  border: 1px solid #d9d9d9;
   border-radius: 30px;
 
   transition: border-color 350ms, box-shadow 350ms, transform 250ms;
@@ -222,7 +222,7 @@ label {
   width: 22px;
   height: 22px;
 
-  border: 1px solid #b9b9b9;
+  border: 1px solid #d9d9d9;
   border-radius: 50%;
 }
 
@@ -237,4 +237,99 @@ label {
   align-self: flex-end;
 }
 
-/* __________________ SECTION HOSTING __________________ */
+/* __________________ SECTION HOSTING & ASIDE POPULAR __________________ */
+
+/* ---- section & aside layout ---- */
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.hosting {
+  flex: 3;
+}
+
+.popular {
+  flex: 1.28;
+}
+
+.hosting,
+.popular {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+
+  padding: 40px;
+}
+
+/* __________________ HOSTING CARDS __________________ */
+.hostingCard {
+  border-radius: 20px;
+  box-shadow: 0 0 15px #d9d9d9;
+
+  background-color: white;
+
+  transition: transform 250ms;
+}
+
+.hostingCard:hover {
+  transform: scale(1.01);
+}
+
+.hosting__layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.hostingCard__photo > img {
+  object-fit: cover;
+
+  width: 235px;
+  height: 115px;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  margin: 5px 5px 0 5px;
+}
+
+.hostingCard__description {
+  margin: 10px 0 10px 15px;
+}
+
+.hostingCard__description--name {
+  font-family: 'ralewayBold';
+}
+
+.hostingCard__description--price {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.hostingCard__description--price span {
+  font-family: 'ralewayBold';
+}
+
+#budget {
+  font-family: 'ralewayBold';
+}
+
+.hostingCard__description--rate {
+  font-size: 11px;
+}
+
+#full {
+  color: #0065fc;
+}
+
+#empty {
+  color: #d9d9d9;
+}
+
+.more {
+  font-size: 18px;
+  font-family: 'ralewayBold';
+}
+
+/* __________________ POPULAR CARDS __________________ */
