@@ -265,11 +265,13 @@ label {
 .hosting__layout {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 27px;
   margin: 30px 0;
 }
 
 .hostingCard {
+  width: 31%;
+
   border-radius: 20px;
   box-shadow: 0 0 15px #d9d9d9;
 
@@ -282,16 +284,18 @@ label {
   transform: scale(1.01);
 }
 
+.hostingCard__photo {
+  padding: 5px;
+}
+
 .hostingCard__photo > img {
   object-fit: cover;
 
-  width: 235px;
+  width: 100%;
   height: 115px;
 
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-
-  margin: 5px 5px 0 5px;
 }
 
 .hostingCard__description {
@@ -353,10 +357,13 @@ label {
 
 .popularCard__layout {
   display: flex;
+  justify-content: space-between;
 }
 
 .popularCard {
-  border-radius: 20px;
+  height: 135px;
+
+  border-radius: 15px;
   box-shadow: 0 0 15px #d9d9d9;
 
   background-color: white;
@@ -368,25 +375,29 @@ label {
   transform: scale(1.01);
 }
 
+.popularCard__photo {
+  width: 40%;
+}
+
 .popularCard__photo > img {
   object-fit: cover;
 
-  width: 125px;
+  width: 100%;
   height: 135px;
 
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 
-  margin: 5px 5px 0 5px;
+  padding: 5px 0px 5px 5px;
 }
 
 .popularCard__description {
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  margin: 15px 0 10px 15px;
-  padding-right: 30px;
+  margin: 15px 50px 15px 15px;
 }
 
 .popularCard__description--rate {
@@ -407,3 +418,52 @@ label {
 }
 
 /* __________________ SECTION ACTIVITIES __________________ */
+.activities > h2 {
+  margin: 55px 0 25px 0;
+}
+.activities__layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.activityCard {
+  border-radius: 15px;
+  box-shadow: 0 0 15px #d9d9d9;
+  height: fit-content;
+
+  background-color: white;
+
+  transition: transform 250ms;
+}
+
+.activityCard:hover {
+  transform: scale(1.01);
+}
+
+.activityCard__photo > img {
+  object-fit: cover;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.large > img {
+  width: 305px;
+  height: 390px;
+}
+.medium > img {
+  width: 305px;
+  height: 200px;
+}
+.small > img {
+  width: 305px;
+  height: 120px;
+}
+
+.activityCard__description {
+  font-family: 'ralewayBold';
+  text-transform: capitalize;
+
+  margin: 14px;
+}
