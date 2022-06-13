@@ -51,6 +51,11 @@ h3 {
   font-family: 'ralewayBold';
 }
 
+h4 {
+  font-family: 'ralewayBold';
+  font-size: 18px;
+}
+
 /* __________________ HEADER __________________ */
 header {
   display: flex;
@@ -483,4 +488,20 @@ label {
   text-transform: capitalize;
 
   margin: 14px;
+}
+
+/* __________________ FOOTER __________________ */
+footer {
+  display:flex;
+  background-color: #f2f2f2;
+
+  padding: 40px;
+}
+
+.footer-column {
+  margin-right: 18%;
+}
+
+.footer-column li {
+  margin-top: 15px;
 }
