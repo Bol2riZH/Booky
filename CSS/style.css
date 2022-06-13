@@ -1,4 +1,4 @@
-/* INIT */
+/* __________________ INIT __________________ */
 *,
 *::after,
 *::before {
@@ -51,7 +51,7 @@ h3 {
   font-family: 'ralewayBold';
 }
 
-/* HEADER */
+/* __________________ HEADER __________________ */
 header {
   display: flex;
   justify-content: space-between;
@@ -77,9 +77,13 @@ nav a:hover {
   color: #0065fc;
 }
 
-/* SECTION SEARCH */
+/* __________________ SECTION SEARCH __________________ */
 
-/* Form */
+/* ---- form ---- */
+.search {
+  margin-bottom: 30px;
+}
+
 .search > p {
   margin: 15px 0px;
 }
@@ -142,7 +146,7 @@ label {
   color: white;
 }
 
-/* filter */
+/* ---- filter ---- */
 .filter {
   display: flex;
   flex-wrap: wrap;
@@ -205,4 +209,32 @@ label {
   text-transform: capitalize;
 }
 
-/* Information */
+/* ---- information ---- */
+.information {
+  display: flex;
+  gap: 15px;
+}
+
+.information__icone {
+  display: flex;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  border: 1px solid #b9b9b9;
+  border-radius: 50%;
+}
+
+.information__icone > i {
+  align-self: center;
+
+  font-size: 14px;
+  color: #0065fc;
+}
+
+.information > p {
+  align-self: flex-end;
+}
+
+/* __________________ SECTION HOSTING __________________ */
