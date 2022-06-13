@@ -418,16 +418,29 @@ label {
 }
 
 /* __________________ SECTION ACTIVITIES __________________ */
+.activities {
+  margin-bottom: 50px;
+}
+
 .activities > h2 {
   margin: 55px 0 25px 0;
 }
-.activities__layout {
+.activities__layout--global {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  gap: 40px;
+}
+
+.activities__layout--column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   gap: 40px;
 }
 
 .activityCard {
+  max-width: 305px;
+
   border-radius: 15px;
   box-shadow: 0 0 15px #d9d9d9;
   height: fit-content;
@@ -442,6 +455,7 @@ label {
 }
 
 .activityCard__photo > img {
+  width: 100%;
   object-fit: cover;
 
   border-top-left-radius: 15px;
@@ -449,16 +463,19 @@ label {
 }
 
 .large > img {
-  width: 305px;
   height: 390px;
 }
 .medium > img {
-  width: 305px;
+  height: 153px;
+}
+.medium-plus > img {
   height: 200px;
 }
+.extra-small > img {
+  height: 100px;
+}
 .small > img {
-  width: 305px;
-  height: 120px;
+  height: 145px;
 }
 
 .activityCard__description {
