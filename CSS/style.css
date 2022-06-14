@@ -65,9 +65,6 @@ h4 {
   main {
     margin: 0;
   }
-  .search {
-    margin: 0 20px;
-  }
 }
 
 /* __________________ HEADER __________________ */
@@ -100,7 +97,7 @@ nav a:hover {
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: center;
+    gap: 25px;
     margin: 30px 0;
     padding-bottom: 10px;
   }
@@ -114,16 +111,28 @@ nav a:hover {
     margin-left: 0;
   }
 
-  nav a {
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+  nav li {
+    width: 100%;
     text-align: center;
-    padding: 0 64px 10px 64px;
+    padding-bottom: 10px;
     border-bottom: 3px solid #f2f2f2;
+  }
+
+  nav li:hover {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #0065fc;
   }
 
   nav a:hover {
     border-top: none;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #0065fc;
   }
 }
 
@@ -202,6 +211,9 @@ label {
 
 /* MOBILE form */
 @media screen and (max-width: 768px) {
+  .search {
+    margin: 0 20px;
+  }
   .search > h2 {
     display: inline-block;
     width: 300px;
@@ -607,6 +619,7 @@ label {
     padding: 0 20px;
   }
   .activities > h2 {
+    margin-left: 20px;
     margin-top: 0;
   }
   .activityCard {
