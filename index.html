@@ -16,10 +16,10 @@
 
   <body>
     <main>
-      <!--------------------------- HEADER ----------------------------------------------->
+      <!-- HEADER -->
       <header>
         <div class="logo">
-          <img src="images\Booki@3x.png" alt="Booki" />
+          <img src="images/Booki@3x.png" alt="Booki" />
         </div>
         <nav>
           <ul>
@@ -28,7 +28,7 @@
           </ul>
         </nav>
       </header>
-      <!--------------------------- SEARCH ----------------------------------------------->
+      <!-- SEARCH -->
       <section class="search">
         <h2>Trouver votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
@@ -37,7 +37,12 @@
           <div class="location">
             <i class="fa-solid fa-location-dot"></i>
           </div>
-          <input type="text" name="city" placeholder="Marseille, France" />
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Marseille, France"
+          />
           <label class="search-desktop" for="city">Rechercher</label>
           <label class="search-mobile" for="city"
             ><i class="fa-solid fa-magnifying-glass"></i
@@ -93,7 +98,7 @@
       </section>
 
       <div class="container">
-        <!--------------------------- HOSTING ----------------------------------------------->
+        <!-- HOSTING -->
         <section class="hosting" id="hosting">
           <h2>Hébergements à Marseille</h2>
 
@@ -102,7 +107,7 @@
               <div class="hostingCard__layout">
                 <div class="hostingCard__photo">
                   <img
-                    src="images\hosting\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    src="images/hosting/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                     alt="hébergement"
                   />
                 </div>
@@ -112,15 +117,16 @@
                   </div>
                   <div class="hostingCard__description--price">
                     <p>
-                      Nuit à partir de <span id="budget">25</span><span>€</span>
+                      Nuit à partir de <span class="budget">25</span
+                      ><span>€</span>
                     </p>
                   </div>
                   <div class="hostingCard__description--rate">
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="empty"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star empty"></i>
                   </div>
                 </div>
               </div>
@@ -130,7 +136,7 @@
               <div class="hostingCard__layout">
                 <div class="hostingCard__photo">
                   <img
-                    src="images\hosting\fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    src="images/hosting/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                     alt="hébergement"
                   />
                 </div>
@@ -142,11 +148,11 @@
                     <p>Nuit à partir de 52<span>€</span></p>
                   </div>
                   <div class="hostingCard__description--rate">
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
                   </div>
                 </div>
               </div>
@@ -156,7 +162,7 @@
               <div class="hostingCard__layout">
                 <div class="hostingCard__photo">
                   <img
-                    src="images\hosting\reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    src="images/hosting/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                     alt="hébergement"
                   />
                 </div>
@@ -168,11 +174,11 @@
                     <p>Nuit à partir de 76<span>€</span></p>
                   </div>
                   <div class="hostingCard__description--rate">
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="empty"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star empty"></i>
                   </div>
                 </div>
               </div>
@@ -182,7 +188,7 @@
               <div class="hostingCard__layout">
                 <div class="hostingCard__photo">
                   <img
-                    src="images\hosting\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    src="images/hosting/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                     alt="hébergement"
                   />
                 </div>
@@ -194,11 +200,11 @@
                     <p>Nuit à partir de 46<span>€</span></p>
                   </div>
                   <div class="hostingCard__description--rate">
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="empty"></i>
-                    <i class="fa-solid fa-star" id="empty"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star empty"></i>
+                    <i class="fa-solid fa-star empty"></i>
                   </div>
                 </div>
               </div>
@@ -208,7 +214,7 @@
               <div class="hostingCard__layout">
                 <div class="hostingCard__photo">
                   <img
-                    src="images\hosting\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    src="images/hosting/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                     alt="hébergement"
                   />
                 </div>
@@ -218,15 +224,16 @@
                   </div>
                   <div class="hostingCard__description--price">
                     <p>
-                      Nuit à partir de <span id="budget">23</span><span>€</span>
+                      Nuit à partir de <span class="budget">23</span
+                      ><span>€</span>
                     </p>
                   </div>
                   <div class="hostingCard__description--rate">
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="empty"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star empty"></i>
                   </div>
                 </div>
               </div>
@@ -236,7 +243,7 @@
               <div class="hostingCard__layout">
                 <div class="hostingCard__photo">
                   <img
-                    src="images\hosting\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                    src="images/hosting/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                     alt="hébergement"
                   />
                 </div>
@@ -248,11 +255,11 @@
                     <p>Nuit à partir de 96<span>€</span></p>
                   </div>
                   <div class="hostingCard__description--rate">
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
                   </div>
                 </div>
               </div>
@@ -262,7 +269,7 @@
           <div class="more"><a href="#">Afficher plus</a></div>
         </section>
 
-        <!--------------------------- POPULAR ----------------------------------------------->
+        <!-- POPULAR -->
         <aside class="popular">
           <div class="popular__title">
             <h2>Les plus populaires</h2>
@@ -274,7 +281,7 @@
               <div class="popularCard__layout">
                 <div class="popularCard__photo">
                   <img
-                    src="images\hosting\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                    src="images/hosting/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                     alt="populaires"
                   />
                 </div>
@@ -288,11 +295,11 @@
                     </div>
                   </div>
                   <div class="popularCard__description--rate">
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
                   </div>
                 </div>
               </div>
@@ -302,7 +309,7 @@
               <div class="popularCard__layout">
                 <div class="popularCard__photo">
                   <img
-                    src="images\hosting\aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    src="images/hosting/aw-creative-VGs8z60yT2c-unsplash.jpg"
                     alt="populaires"
                   />
                 </div>
@@ -316,11 +323,11 @@
                     </div>
                   </div>
                   <div class="popularCard__description--rate">
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="empty"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star empty"></i>
                   </div>
                 </div>
               </div>
@@ -330,7 +337,7 @@
               <div class="popularCard__layout">
                 <div class="popularCard__photo">
                   <img
-                    src="images\hosting\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                    src="images/hosting/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                     alt="populaires"
                   />
                 </div>
@@ -344,11 +351,11 @@
                     </div>
                   </div>
                   <div class="popularCard__description--rate">
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="full"></i>
-                    <i class="fa-solid fa-star" id="empty"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star empty"></i>
                   </div>
                 </div>
               </div>
@@ -356,7 +363,7 @@
           </div>
         </aside>
       </div>
-      <!--------------------------- ACTIVITIES ----------------------------------------------->
+      <!-- ACTIVITIES -->
       <section class="activities" id="activities">
         <h2>Activités à Marseille</h2>
 
@@ -364,7 +371,7 @@
           <a class="activityCard" href="#">
             <div class="activityCard__photo large mobile-size">
               <img
-                src="images\activites\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                 alt="activité"
               />
             </div>
@@ -375,7 +382,7 @@
             <a class="activityCard" href="#">
               <div class="activityCard__photo medium-plus mobile-size">
                 <img
-                  src="images\activites\paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                  src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                   alt="activité"
                 />
               </div>
@@ -387,7 +394,7 @@
             <a class="activityCard" href="#">
               <div class="activityCard__photo extra-small mobile-size">
                 <img
-                  src="images\activites\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                  src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                   alt="activité"
                 />
               </div>
@@ -398,7 +405,7 @@
           <a class="activityCard" href="#">
             <div class="activityCard__photo large mobile-size">
               <img
-                src="images\activites\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                 alt="activité"
               />
             </div>
@@ -411,7 +418,7 @@
             <a class="activityCard" href="#">
               <div class="activityCard__photo small mobile-size">
                 <img
-                  src="images\activites\florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                  src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                   alt="activité"
                 />
               </div>
@@ -423,7 +430,7 @@
             <a class="activityCard" href="#">
               <div class="activityCard__photo medium mobile-size">
                 <img
-                  src="images\activites\lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                  src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                   alt="activité"
                 />
               </div>
@@ -434,7 +441,7 @@
       </section>
     </main>
 
-    <!--------------------------- FOOTER ----------------------------------------------->
+    <!-- FOOTER -->
     <footer>
       <div class="footer-column">
         <h4>A propos</h4>
