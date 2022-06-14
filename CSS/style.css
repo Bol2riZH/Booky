@@ -218,6 +218,9 @@ label {
     display: inline-block;
     width: 300px;
   }
+  .search > p {
+    margin-bottom: 40px;
+  }
 
   .search-desktop {
     display: none;
@@ -301,6 +304,9 @@ label {
 
 /* MOBILE filter */
 @media screen and (max-width: 768px) {
+  .filter {
+    gap: 15px;
+  }
   .filter h3 {
     width: 100%;
   }
@@ -332,6 +338,13 @@ label {
 
 .information > p {
   align-self: flex-end;
+}
+
+/* MOBILE information */
+@media screen and (max-width: 768px) {
+  .information > p {
+    margin-bottom: 30px;
+  }
 }
 
 /* __________________ SECTION HOSTING & ASIDE POPULAR __________________ */
@@ -654,7 +667,8 @@ footer {
 /* MOBILE footer */
 @media screen and (max-width: 768px) {
   footer {
+    padding: 40px 20px;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
   }
 }
