@@ -65,8 +65,8 @@ h4 {
   main {
     margin: 0;
   }
-  .search{
-    margin: 0 20px
+  .search {
+    margin: 0 20px;
   }
 }
 
@@ -355,6 +355,8 @@ label {
   .popular {
     border-radius: 0;
     margin-right: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .hosting {
     padding-top: 0;
@@ -523,9 +525,10 @@ label {
 
 /* MOBILE hostingCard, popularCard & more */
 @media screen and (max-width: 768px) {
-  .hosting__layout, .popular__layout {
+  .hosting__layout,
+  .popular__layout {
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
   }
 }
 
@@ -539,7 +542,6 @@ label {
 }
 .activities__layout--global {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 40px;
 }
 
@@ -595,6 +597,24 @@ label {
   text-transform: capitalize;
 
   margin: 14px;
+}
+
+/* MOBILE section activities*/
+@media screen and (max-width: 768px) {
+  .activities__layout--global {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .activities > h2 {
+    margin-top: 0;
+  }
+  .activityCard {
+    min-width: 100%;
+  }
+  .mobile-size > img {
+    height: 145px;
+  }
 }
 
 /* __________________ FOOTER __________________ */
