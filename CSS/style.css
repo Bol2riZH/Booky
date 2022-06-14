@@ -214,12 +214,18 @@ label {
   .search {
     margin: 0 20px;
   }
+
   .search > h2 {
     display: inline-block;
     width: 300px;
   }
+
   .search > p {
     margin-bottom: 40px;
+  }
+
+  .search__form input {
+    width: 100%;
   }
 
   .search-desktop {
@@ -227,6 +233,10 @@ label {
   }
 
   .search-mobile {
+    /* move over the input */
+    position: relative;
+    right: 15px;
+
     display: flex;
     justify-content: center;
 
@@ -234,9 +244,6 @@ label {
 
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-  }
-  /*TODO*/
-  /* border input >>>>>>>>> */
 }
 
 /* ---- filter ---- */
