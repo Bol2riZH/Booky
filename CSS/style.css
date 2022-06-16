@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* font */
 @font-face {
   font-family: 'raleway';
   src: url('/images/font/Raleway/Raleway-VariableFont_wght.ttf')
@@ -28,14 +28,18 @@
 
 html {
   font-family: 'raleway', sans-serif;
-
-  max-width: 1420px;
-  margin: auto;
-
   scroll-behavior: smooth;
 }
 
 main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header,
+.search,
+.container,
+.activities {
   margin: 0 40px;
 }
 
@@ -63,6 +67,12 @@ h4 {
 }
 
 /* MOBILE init */
+@media screen and (max-width: 992px) {
+  .container,
+  .activities {
+    margin: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   main {
     margin: 0;
@@ -465,6 +475,8 @@ label {
 .more {
   font-size: 18px;
   font-family: 'ralewayBold';
+
+  margin-top: 40px;
 }
 
 /* __________________ POPULAR CARDS __________________ */
@@ -550,10 +562,8 @@ label {
 @media screen and (max-width: 992px) {
   .popular__layout {
     flex-direction: column;
-    gap: 15px;
-  }
-  .popular__layout {
     align-items: center;
+    gap: 15px;
   }
   .popularCard {
     width: 70%;
@@ -569,6 +579,7 @@ label {
 @media screen and (max-width: 768px) {
   .hosting__layout {
     flex-direction: column;
+    gap: 15px;
   }
   .popularCard {
     width: 100%;
@@ -591,7 +602,7 @@ label {
 .activities__layout--column {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: auto;
   gap: 40px;
 }
 
@@ -600,7 +611,6 @@ label {
 
   border-radius: 15px;
   box-shadow: 0 0 15px #d9d9d9;
-  height: fit-content;
 
   background-color: white;
 
@@ -642,6 +652,10 @@ label {
   margin: 14px;
 }
 
+.activityCard__description > p {
+  white-space: nowrap;
+}
+
 /* TABLETTE & MOBILE section activities*/
 @media screen and (max-width: 992px) {
   .activities__layout--global {
@@ -674,16 +688,11 @@ footer {
 }
 
 .footer-column {
-  margin-right: 18%;
+  margin-right: 19%;
 }
 
 .footer-column li {
   margin-top: 14px;
-}
-
-.footer-column a:hover {
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
 /* MOBILE footer */
