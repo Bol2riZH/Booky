@@ -7,6 +7,6 @@ Here is the first "coding" project.
 
 ## It was about learning the basics in HTML and CSS and of course RESPONSIVE.
 
-> Check it  out [here](booky-ebon.vercel.app) !
+> Check it  out [here](https://booky-ebon.vercel.app/) !
 
 ![booki](https://user-images.githubusercontent.com/101552588/205619638-4aa184b8-7c32-4fd8-bce7-aeb75688ce44.png)
