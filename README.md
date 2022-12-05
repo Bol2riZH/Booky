@@ -1,11 +1,11 @@
 # Booky
-### OpenClassrooms Project 2 - Renting website (HTML - CSS)
+## OpenClassrooms Project 2 - Renting website (HTML - CSS)
 
 Project 1 consisted to learn about how a developper work and the mindset that you'll have to get to be efficient in that work.
 
 Here is the first "coding" project. 
 
-## It was about learning the basics in HTML and CSS and of course RESPONSIVE.
+### It was about learning the basics in HTML and CSS and of course RESPONSIVE.
 
 > Check it  out [here](https://booky-ebon.vercel.app/) !
 
